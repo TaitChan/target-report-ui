@@ -1,0 +1,59 @@
+/*滑入——从左侧*/
+@keyframes slideIn_left {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/*滑入——从右侧*/
+@keyframes slideIn_right {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/*滑出——从左侧*/
+@keyframes slideOut_left {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+/*滑出——从右侧*/
+@keyframes slideOut_right {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/*滑动(滑入)——从左侧滑入,从右侧滑出*/
+.slide_leftToRight-enter-active {
+    animation: slideIn_left 0.5s;
+}
+
+/*滑动(滑出)——从左侧滑入,从右侧滑出*/
+.slide_leftToRight-leave-active {
+    animation: slideOut_right 0.5s;
+}
+
+/*滑动(滑入)——从右侧滑入,从左侧滑出*/
+.slide_rightToLeft-enter-active {
+    animation: slideIn_right 0.5s;
+}
+
+/*滑动(滑出)——从右侧滑入,从左侧滑出*/
+.slide_rightToLeft-leave-active {
+    animation: slideOut_left 0.5s;
+}

@@ -1,0 +1,22 @@
+:root{
+  --el-text-color-regular:rgba(0,0,0,0.5);
+  --el-color-primary: var(--color-primary);
+}
+.el-button {
+  --el-button-font-weight:350;
+  .svg-icon{
+    margin-right: 4px;
+  }
+}
+.el-tabs__item {
+  font-weight: 350;
+}
+.el-table th.el-table__cell>.cell {
+  font-weight: 350;
+}
+
+.el-drawer__header{
+  border-bottom: 1px solid var(--gray-1);
+  margin-bottom: 0;
+  padding-bottom: var(--el-drawer-padding-primary);
+}
